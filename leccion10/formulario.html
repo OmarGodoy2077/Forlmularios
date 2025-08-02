@@ -1,0 +1,23 @@
+
+<form action="#">
+  <fieldset>
+    <legend>Formulario de Contacto Accesible</legend>
+    
+    <div>
+      <!-- Etiqueta asociada correctamente -->
+      <label for="nombre">Nombre Completo (obligatorio):</label>
+      <input type="text" id="nombre" name="nombre" required aria-required="true">
+    </div>
+
+    <div>
+      <label for="mensaje">Tu Mensaje:</label>
+      <!-- Se asocia texto de ayuda con aria-describedby -->
+      <textarea id="mensaje" name="mensaje" aria-describedby="ayuda-mensaje"></textarea>
+      <small id="ayuda-mensaje">No incluyas información sensible en tu mensaje.</small>
+    </div>
+
+  </fieldset>
+  <button type="submit">Enviar</button>
+</form>
+
+
